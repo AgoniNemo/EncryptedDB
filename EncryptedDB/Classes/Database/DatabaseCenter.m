@@ -8,7 +8,6 @@
 
 #import "DatabaseCenter.h"
 #import "Database.h"
-#import "FileManager.h"
 #import <objc/runtime.h>
 
 const static NSInteger DB_MANAGER_VER = 1;
@@ -139,7 +138,7 @@ static DatabaseCenter *sharedDatabaseCenter = nil;
 }
 - (void)createDB {
     
-    if ([FileManager fileExistsAtPath:[FileManager getDatabasePath]]) {
+    if ([self fileExistsAtPath:[self getDatabasePath]]) {
         [self checkDB];
         return;
     }
@@ -169,7 +168,7 @@ static DatabaseCenter *sharedDatabaseCenter = nil;
     NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
     NSDictionary *dict = [self.dbMager getAllDataTableName:DBINFORTAB order:[NSString stringWithFormat:@"appBundleVersion = '%@'",appVersion]].firstObject;
     if (dict.count > 0) {
-        NSLog(@"========数据库版本存在 %@",[FileManager getDatabasePath]);
+        NSLog(@"========数据库版本存在 %@",[self getDatabasePath]);
         NSLog(@"%@",dict);
         return;
     }
@@ -231,6 +230,7 @@ static DatabaseCenter *sharedDatabaseCenter = nil;
     [self.dbMager insertNewsData:@{@"dbVersion":[NSString stringWithFormat:@"%ld",(long)DB_MANAGER_VER],@"appBundleVersion":[NSString stringWithFormat:@"%@",appVersion],@"time":timeString} tableName:DBINFORTAB];
 }
 
+#pragma ---mark Database
 
 -(Database *)dbMager {
     if (_dbMager == nil) {
@@ -241,20 +241,50 @@ static DatabaseCenter *sharedDatabaseCenter = nil;
 }
 -(FMDatabaseQueue *)queue {
     if (_queue == nil) {
-        _queue = [FMDatabaseQueue databaseQueueWithPath:[FileManager getDatabasePath]];
+        _queue = [FMDatabaseQueue databaseQueueWithPath:[self dbFilePath]];
     }
     return _queue;
 }
 -(FMDatabase *)dataBase {
     if (_dataBase == nil) {
-        _dataBase = [[FMDatabase alloc] initWithPath:[FileManager getDatabasePath]];
+        _dataBase = [[FMDatabase alloc] initWithPath:[self dbFilePath]];
     }
     return _dataBase;
 }
 
+#pragma ---mark File
+
 - (NSString *)dbFilePath {
-    return [FileManager getDatabasePath];
+    return [self getDatabasePath];
 }
+
+-(NSString *)getDatabasePath {
+    return [[self getDocumentPath] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.db",@"DataStore"]];
+}
+
+- (NSString *)getDocumentPath{
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0];
+}
+
+-(BOOL)boolWithPath:(NSString *)path {
+    BOOL b = [self fileExistsAtPath:[path stringByDeletingLastPathComponent]];
+    if(!b){
+        [[self defaultManager] createDirectoryAtPath:[path stringByDeletingLastPathComponent]
+                         withIntermediateDirectories:YES
+                                          attributes:nil
+                                               error:nil];
+    }
+    return b;
+}
+
+-(BOOL)fileExistsAtPath:(NSString *)path {
+    return [[self defaultManager] fileExistsAtPath:path];
+}
+
+- (NSFileManager *)defaultManager {
+    return [NSFileManager defaultManager];
+}
+
 - (void)close {
     FMDBRetain(self);
     dispatch_sync(dispatch_queue_create("DatabaseClose", NULL), ^() {

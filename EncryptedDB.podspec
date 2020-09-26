@@ -20,9 +20,6 @@ Pod::Spec.new do |s|
   s.subspec 'Database' do |d|
       d.source_files = 'EncryptedDB/Classes/Database/*.{h,m}'
   end
-  s.subspec 'FileManager' do |f|
-      f.source_files = 'EncryptedDB/Classes/FileManager/*.{h,m}'
-  end
   
   # s.resource_bundles = {
   #   'EncryptedDB' => ['EncryptedDB/Assets/*.png']
