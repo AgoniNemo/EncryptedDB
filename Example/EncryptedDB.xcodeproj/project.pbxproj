@@ -25,6 +25,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9F15A83BB72306C39F283EC8 /* Pods_EncryptedDB_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE87E7E7060FB58F430FFE8 /* Pods_EncryptedDB_Tests.framework */; };
 		BA142C66251F14A20057BF14 /* NMTea.m in Sources */ = {isa = PBXBuildFile; fileRef = BA142C65251F14A20057BF14 /* NMTea.m */; };
+		BA867EE0251F309C00CD6A59 /* EncryptedDB.h in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA8C4D99251DDC7D0023A757 /* EncryptedDB.h */; };
 		BA9D6366251EFA0A00492116 /* NMStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D6365251EFA0A00492116 /* NMStudent.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BA867EE0251F309C00CD6A59 /* EncryptedDB.h in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;

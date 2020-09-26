@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
   s.source_files = 'EncryptedDB/Classes/*.h'
   
   s.subspec 'Database' do |d|
-      d.source_files = 'EncryptedDB/Classes/Database/**/*'
+      d.source_files = 'EncryptedDB/Classes/Database/*.{h,m}'
   end
   s.subspec 'FileManager' do |f|
-      f.source_files = 'EncryptedDB/Classes/FileManager/**/*'
+      f.source_files = 'EncryptedDB/Classes/FileManager/*.{h,m}'
   end
   
   # s.resource_bundles = {
