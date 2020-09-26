@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'EncryptedDB_Example' do
+  pod 'EncryptedDB', :path => '../'
+
+  target 'EncryptedDB_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
