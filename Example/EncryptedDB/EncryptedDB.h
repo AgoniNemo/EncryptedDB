@@ -2,11 +2,11 @@
 //  EncryptedDB.h
 //  EncryptedDB
 //
-//  Created by Nemo on 2020/9/25.
+//  Created by Nemo on 2020/10/1.
 //  Copyright © 2020 AgoniNemo. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for EncryptedDB.
 FOUNDATION_EXPORT double EncryptedDBVersionNumber;

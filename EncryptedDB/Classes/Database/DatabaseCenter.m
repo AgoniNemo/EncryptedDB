@@ -181,7 +181,7 @@ static DatabaseCenter *sharedDatabaseCenter = nil;
 }
 - (void)updateDB {
     
-    NSArray *tabList = [self.dbMager  getAllDataTableName:DBINFORTAB order:@""];
+    NSArray *tabList = [self.dbMager getAllDataTableName:DBINFORTAB order:@""];
     NSMutableArray *addFields = [[NSMutableArray alloc] init];
     NSMutableArray *deleteTbs = [[NSMutableArray alloc] init];
     BOOL b = NO;
@@ -236,6 +236,7 @@ static DatabaseCenter *sharedDatabaseCenter = nil;
     if (_dbMager == nil) {
         _dbMager = [Database dataManagerForQueue:self.queue];
         _dbMager.dataBase = self.dataBase;
+        if (self.dbKey) { [_dbMager setDatabaseKey:self.dbKey]; }
     }
     return _dbMager;
 }

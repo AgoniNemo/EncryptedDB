@@ -8,10 +8,21 @@
 
 #import "Database.h"
 
+@interface Database()
+@property (nonatomic, strong) NSString *dbKey;
+@end
+
 @implementation Database
 
 static NSString *const DBKEY = @"89FB940530BD285E86D2DE90081FAB6F";
 
+-(void)setDatabaseKey:(NSString *)key {
+    _dbKey = key;
+}
+
+-(NSString *)dbKey {
+    return _dbKey ?: DBKEY;
+}
 
 +(instancetype)dataManagerForQueue:(FMDatabaseQueue *)queue {
     Database *dataBase = [[self alloc] init];
@@ -334,7 +345,7 @@ static NSString *const DBKEY = @"89FB940530BD285E86D2DE90081FAB6F";
     
     BOOL b = NO;
     if ([_dataBase open]){
-        [_dataBase setKey:DBKEY];
+        [_dataBase setKey:self.dbKey];
         b = [_dataBase  executeUpdate:sql];
         [_dataBase close];
         return b;
@@ -488,9 +499,11 @@ static NSString *const DBKEY = @"89FB940530BD285E86D2DE90081FAB6F";
 
 -(void)openDB:(__attribute__((noescape)) void (^)(FMDatabase *db))block {
     if (!block) { return; }
+    __weak typeof(self) wsf = self;
     [_queue inDatabase:^(FMDatabase *db) {
         [db open];
-        [db setKey:DBKEY];
+        __strong typeof(wsf) strongSelf = wsf;
+        [db setKey:strongSelf.db];
         block(db);
     }];
 }

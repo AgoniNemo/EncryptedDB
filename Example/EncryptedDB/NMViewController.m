@@ -7,7 +7,7 @@
 //
 
 #import "NMViewController.h"
-#import <DatabaseCenter.h>
+#import <EncryptedDB.h>
 #import "NMStudent.h"
 #import "NMTea.h"
 

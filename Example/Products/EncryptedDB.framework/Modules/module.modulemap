@@ -1,0 +1,6 @@
+framework module EncryptedDB {
+  umbrella header "EncryptedDB.h"
+
+  export *
+  module * { export * }
+}

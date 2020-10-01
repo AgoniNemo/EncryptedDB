@@ -6,16 +6,18 @@
 //  Copyright © 2020 AgoniNemo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <FMDB/FMDB.h>
+#import <UIKit/UIKit.h>
+#import <fmdb/FMDB.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Database : NSObject
 
-
 @property (nonatomic ,strong) FMDatabase * dataBase;
 @property (nonatomic ,strong) FMDatabaseQueue *queue;
+
+//** 设置数据库密码（数据库密码已经有一个默认的）*/
+-(void)setDatabaseKey:(NSString *)key;
 
 +(instancetype)dataManagerForQueue:(FMDatabaseQueue *)queue;
 

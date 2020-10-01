@@ -1,13 +1,18 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '9.0'
+
+
+def dependencyFun
+  pod 'FMDB/SQLCipher', '~> 2.7.5'
+end
 
 target 'EncryptedDB_Example' do
   pod 'EncryptedDB', :path => '../'
+  dependencyFun
+end
 
-  target 'EncryptedDB_Tests' do
-    inherit! :search_paths
 
-    
-  end
+target 'EncryptedDB' do
+  dependencyFun
 end
