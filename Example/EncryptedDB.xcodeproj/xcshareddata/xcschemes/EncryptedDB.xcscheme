@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA7916C82524E93A0021369B"
+               BlueprintIdentifier = "BA7E53CF2525CF0B0029C579"
                BuildableName = "EncryptedDB.framework"
                BlueprintName = "EncryptedDB"
                ReferencedContainer = "container:EncryptedDB.xcodeproj">
@@ -50,7 +50,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA7916C82524E93A0021369B"
+            BlueprintIdentifier = "BA7E53CF2525CF0B0029C579"
             BuildableName = "EncryptedDB.framework"
             BlueprintName = "EncryptedDB"
             ReferencedContainer = "container:EncryptedDB.xcodeproj">

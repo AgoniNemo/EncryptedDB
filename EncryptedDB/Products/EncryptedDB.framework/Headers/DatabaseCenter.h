@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 单例
 + (DatabaseCenter *)sharedDatabaseCenter;
 
+@property (nonatomic, copy) NSString *dbKey;
 
 /**
  * 通过模型数组创建数据库表

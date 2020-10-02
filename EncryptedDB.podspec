@@ -14,15 +14,16 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'EncryptedDB/Classes/*.h'
+  s.source_files = 'EncryptedDB/Classes/EncryptedDB.h'
 
 if ENV['sys']
+    s.source_files = 'EncryptedDB/Classes/*.h'
+    s.vendored_frameworks = 'EncryptedDB/Products/EncryptedDB.framework'
+else
     s.subspec 'Database' do |d|
       d.dependency 'FMDB/SQLCipher', '~> 2.7.5'
-      d.source_files = 'EncryptedDB/Classes/Database/*.{h,m}'
+      d.source_files = 'EncryptedDB/Classes/Data*.{h,m}'
     end
-else
-    s.vendored_frameworks = 'EncryptedDB/Products/*.{framework}'
 end
   #s.subspec 'Database' do |d|
       # d.dependency 'EncryptedDB/FileManager'

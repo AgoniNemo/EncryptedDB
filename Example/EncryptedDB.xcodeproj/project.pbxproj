@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D70B6F4B9753554097818FA /* Pods_EncryptedDB_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B80D960369F92D0A44F2831 /* Pods_EncryptedDB_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,13 +22,14 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BA142C66251F14A20057BF14 /* NMTea.m in Sources */ = {isa = PBXBuildFile; fileRef = BA142C65251F14A20057BF14 /* NMTea.m */; };
-		BA7E52762525B87C0029C579 /* EncryptedDB.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7E52702525B87C0029C579 /* EncryptedDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA7E52772525B87C0029C579 /* DatabaseCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7E52722525B87C0029C579 /* DatabaseCenter.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		BA7E52782525B87C0029C579 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E52732525B87C0029C579 /* Database.m */; };
-		BA7E52792525B87C0029C579 /* DatabaseCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E52742525B87C0029C579 /* DatabaseCenter.m */; };
-		BA7E527A2525B87C0029C579 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7E52752525B87C0029C579 /* Database.h */; };
+		BA7B3D602527175A00E0E3C5 /* DatabaseCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7B3D5C2527175A00E0E3C5 /* DatabaseCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA7B3D612527175A00E0E3C5 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7B3D5D2527175A00E0E3C5 /* Database.h */; };
+		BA7B3D622527175A00E0E3C5 /* DatabaseCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3D5E2527175A00E0E3C5 /* DatabaseCenter.m */; };
+		BA7B3D632527175A00E0E3C5 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B3D5F2527175A00E0E3C5 /* Database.m */; };
+		BA7E53E72525CF310029C579 /* EncryptedDB.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7E53E12525CF310029C579 /* EncryptedDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA9D6366251EFA0A00492116 /* NMStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D6365251EFA0A00492116 /* NMStudent.m */; };
-		BE37E6EB745BA8175B0997D3 /* Pods_EncryptedDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813702ABAFB342F025D41C12 /* Pods_EncryptedDB.framework */; };
+		C22C130633E1653E00FF9C70 /* Pods_EncryptedDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813702ABAFB342F025D41C12 /* Pods_EncryptedDB.framework */; };
+		DB1F725F08A43CBFFADBD3D9 /* Pods_EncryptedDB_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0B00D6A5EF8DA29B061A4F /* Pods_EncryptedDB_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,22 +65,21 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6B80D960369F92D0A44F2831 /* Pods_EncryptedDB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncryptedDB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F0B00D6A5EF8DA29B061A4F /* Pods_EncryptedDB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncryptedDB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		813702ABAFB342F025D41C12 /* Pods_EncryptedDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncryptedDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DA8AC9B55425635CBE7F109 /* Pods-EncryptedDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptedDB_Example.release.xcconfig"; path = "Target Support Files/Pods-EncryptedDB_Example/Pods-EncryptedDB_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B2FD5A30137AACFB2255BEDE /* EncryptedDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EncryptedDB.podspec; path = ../EncryptedDB.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BA142C64251F14A20057BF14 /* NMTea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMTea.h; sourceTree = "<group>"; };
 		BA142C65251F14A20057BF14 /* NMTea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMTea.m; sourceTree = "<group>"; };
-		BA79164325248F170021369B /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA7916C92524E93A0021369B /* EncryptedDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EncryptedDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA7916CC2524E93A0021369B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA7E52702525B87C0029C579 /* EncryptedDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EncryptedDB.h; path = ../../EncryptedDB/Classes/EncryptedDB.h; sourceTree = "<group>"; };
-		BA7E52722525B87C0029C579 /* DatabaseCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseCenter.h; sourceTree = "<group>"; };
-		BA7E52732525B87C0029C579 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
-		BA7E52742525B87C0029C579 /* DatabaseCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseCenter.m; sourceTree = "<group>"; };
-		BA7E52752525B87C0029C579 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		BA7B3D5C2527175A00E0E3C5 /* DatabaseCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseCenter.h; path = ../../EncryptedDB/Classes/DatabaseCenter.h; sourceTree = "<group>"; };
+		BA7B3D5D2527175A00E0E3C5 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Database.h; path = ../../EncryptedDB/Classes/Database.h; sourceTree = "<group>"; };
+		BA7B3D5E2527175A00E0E3C5 /* DatabaseCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseCenter.m; path = ../../EncryptedDB/Classes/DatabaseCenter.m; sourceTree = "<group>"; };
+		BA7B3D5F2527175A00E0E3C5 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Database.m; path = ../../EncryptedDB/Classes/Database.m; sourceTree = "<group>"; };
+		BA7E53D02525CF0B0029C579 /* EncryptedDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EncryptedDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7E53D32525CF0B0029C579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7E53E12525CF310029C579 /* EncryptedDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EncryptedDB.h; path = ../../EncryptedDB/Classes/EncryptedDB.h; sourceTree = "<group>"; };
 		BA9D6364251EFA0A00492116 /* NMStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMStudent.h; sourceTree = "<group>"; };
 		BA9D6365251EFA0A00492116 /* NMStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMStudent.m; sourceTree = "<group>"; };
 		D559362146980EC546F5A651 /* Pods-EncryptedDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptedDB_Example.debug.xcconfig"; path = "Target Support Files/Pods-EncryptedDB_Example/Pods-EncryptedDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +93,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				0D70B6F4B9753554097818FA /* Pods_EncryptedDB_Example.framework in Frameworks */,
+				DB1F725F08A43CBFFADBD3D9 /* Pods_EncryptedDB_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,11 +106,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA7916C62524E93A0021369B /* Frameworks */ = {
+		BA7E53CD2525CF0B0029C579 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE37E6EB745BA8175B0997D3 /* Pods_EncryptedDB.framework in Frameworks */,
+				C22C130633E1653E00FF9C70 /* Pods_EncryptedDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +134,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for EncryptedDB */,
 				6003F5B5195388D20070C39A /* Tests */,
-				BA7916CA2524E93A0021369B /* EncryptedDB */,
+				BA7E53D12525CF0B0029C579 /* EncryptedDB */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				0869FAD806D6B64BF4ED708A /* Pods */,
@@ -147,7 +146,7 @@
 			children = (
 				6003F58A195388D20070C39A /* EncryptedDB_Example.app */,
 				6003F5AE195388D20070C39A /* EncryptedDB_Tests.xctest */,
-				BA7916C92524E93A0021369B /* EncryptedDB.framework */,
+				BA7E53D02525CF0B0029C579 /* EncryptedDB.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,12 +154,11 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BA79164325248F170021369B /* FMDB.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
-				6B80D960369F92D0A44F2831 /* Pods_EncryptedDB_Example.framework */,
 				813702ABAFB342F025D41C12 /* Pods_EncryptedDB.framework */,
+				7F0B00D6A5EF8DA29B061A4F /* Pods_EncryptedDB_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,38 +223,29 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		BA7916CA2524E93A0021369B /* EncryptedDB */ = {
+		BA7E53D12525CF0B0029C579 /* EncryptedDB */ = {
 			isa = PBXGroup;
 			children = (
-				BA7E52702525B87C0029C579 /* EncryptedDB.h */,
-				BA7E52712525B87C0029C579 /* Database */,
-				BA7916CC2524E93A0021369B /* Info.plist */,
+				BA7E53E12525CF310029C579 /* EncryptedDB.h */,
+				BA7B3D5D2527175A00E0E3C5 /* Database.h */,
+				BA7B3D5F2527175A00E0E3C5 /* Database.m */,
+				BA7B3D5C2527175A00E0E3C5 /* DatabaseCenter.h */,
+				BA7B3D5E2527175A00E0E3C5 /* DatabaseCenter.m */,
+				BA7E53D32525CF0B0029C579 /* Info.plist */,
 			);
 			path = EncryptedDB;
-			sourceTree = "<group>";
-		};
-		BA7E52712525B87C0029C579 /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				BA7E52752525B87C0029C579 /* Database.h */,
-				BA7E52732525B87C0029C579 /* Database.m */,
-				BA7E52722525B87C0029C579 /* DatabaseCenter.h */,
-				BA7E52742525B87C0029C579 /* DatabaseCenter.m */,
-			);
-			name = Database;
-			path = ../../EncryptedDB/Classes/Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BA7916C42524E93A0021369B /* Headers */ = {
+		BA7E53CB2525CF0B0029C579 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA7E52762525B87C0029C579 /* EncryptedDB.h in Headers */,
-				BA7E52772525B87C0029C579 /* DatabaseCenter.h in Headers */,
-				BA7E527A2525B87C0029C579 /* Database.h in Headers */,
+				BA7B3D612527175A00E0E3C5 /* Database.h in Headers */,
+				BA7B3D602527175A00E0E3C5 /* DatabaseCenter.h in Headers */,
+				BA7E53E72525CF310029C579 /* EncryptedDB.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,15 +289,15 @@
 			productReference = 6003F5AE195388D20070C39A /* EncryptedDB_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BA7916C82524E93A0021369B /* EncryptedDB */ = {
+		BA7E53CF2525CF0B0029C579 /* EncryptedDB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA7916D42524E93A0021369B /* Build configuration list for PBXNativeTarget "EncryptedDB" */;
+			buildConfigurationList = BA7E53D92525CF0B0029C579 /* Build configuration list for PBXNativeTarget "EncryptedDB" */;
 			buildPhases = (
-				D225E48D878ED27849D4A6BC /* [CP] Check Pods Manifest.lock */,
-				BA7916C42524E93A0021369B /* Headers */,
-				BA7916C52524E93A0021369B /* Sources */,
-				BA7916C62524E93A0021369B /* Frameworks */,
-				BA7916C72524E93A0021369B /* Resources */,
+				A1B13832CFDBE14038B6D31F /* [CP] Check Pods Manifest.lock */,
+				BA7E53CB2525CF0B0029C579 /* Headers */,
+				BA7E53CC2525CF0B0029C579 /* Sources */,
+				BA7E53CD2525CF0B0029C579 /* Frameworks */,
+				BA7E53CE2525CF0B0029C579 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -316,7 +305,7 @@
 			);
 			name = EncryptedDB;
 			productName = EncryptedDB;
-			productReference = BA7916C92524E93A0021369B /* EncryptedDB.framework */;
+			productReference = BA7E53D02525CF0B0029C579 /* EncryptedDB.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -335,7 +324,7 @@
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
-					BA7916C82524E93A0021369B = {
+					BA7E53CF2525CF0B0029C579 = {
 						CreatedOnToolsVersion = 12.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -357,7 +346,7 @@
 			targets = (
 				6003F589195388D20070C39A /* EncryptedDB_Example */,
 				6003F5AD195388D20070C39A /* EncryptedDB_Tests */,
-				BA7916C82524E93A0021369B /* EncryptedDB */,
+				BA7E53CF2525CF0B0029C579 /* EncryptedDB */,
 			);
 		};
 /* End PBXProject section */
@@ -382,7 +371,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA7916C72524E93A0021369B /* Resources */ = {
+		BA7E53CE2525CF0B0029C579 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,11 +388,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-EncryptedDB_Example/Pods-EncryptedDB_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EncryptedDB/EncryptedDB.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EncryptedDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
 			);
@@ -412,7 +403,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EncryptedDB_Example/Pods-EncryptedDB_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D225E48D878ED27849D4A6BC /* [CP] Check Pods Manifest.lock */ = {
+		A1B13832CFDBE14038B6D31F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -479,12 +470,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA7916C52524E93A0021369B /* Sources */ = {
+		BA7E53CC2525CF0B0029C579 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA7E52782525B87C0029C579 /* Database.m in Sources */,
-				BA7E52792525B87C0029C579 /* DatabaseCenter.m in Sources */,
+				BA7B3D632527175A00E0E3C5 /* Database.m in Sources */,
+				BA7B3D622527175A00E0E3C5 /* DatabaseCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,7 +702,7 @@
 			};
 			name = Release;
 		};
-		BA7916D22524E93A0021369B /* Debug */ = {
+		BA7E53DA2525CF0B0029C579 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 02EC78966CEFFF72E70554A8 /* Pods-EncryptedDB.debug.xcconfig */;
 			buildSettings = {
@@ -749,7 +740,7 @@
 			};
 			name = Debug;
 		};
-		BA7916D32524E93A0021369B /* Release */ = {
+		BA7E53DB2525CF0B0029C579 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B16358043349D1B0D8803C1 /* Pods-EncryptedDB.release.xcconfig */;
 			buildSettings = {
@@ -818,11 +809,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA7916D42524E93A0021369B /* Build configuration list for PBXNativeTarget "EncryptedDB" */ = {
+		BA7E53D92525CF0B0029C579 /* Build configuration list for PBXNativeTarget "EncryptedDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA7916D22524E93A0021369B /* Debug */,
-				BA7916D32524E93A0021369B /* Release */,
+				BA7E53DA2525CF0B0029C579 /* Debug */,
+				BA7E53DB2525CF0B0029C579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

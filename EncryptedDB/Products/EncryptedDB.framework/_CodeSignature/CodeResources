@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/DatabaseCenter.h</key>
+		<data>
+		nPfBJIDX0Tp8UNZ/PgaC46Ro7IU=
+		</data>
 		<key>Headers/EncryptedDB.h</key>
 		<data>
-		Y87pmPy7OgTgBporpXu4ZlsEScw=
+		LXDJVXv0Lwg8vHQQhDzG+OhB7F8=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -16,22 +20,29 @@
 		<data>
 		6aua7kxYhukXu6sPSa88fE+cXvY=
 		</data>
-		<key>PrivateHeaders/DatabaseCenter.h</key>
-		<data>
-		TLLC1GTfpVhB7Rh8DsywCYy2r5Q=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/DatabaseCenter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nPfBJIDX0Tp8UNZ/PgaC46Ro7IU=
+			</data>
+			<key>hash2</key>
+			<data>
+			eibiah/v6FwPuoyBm2faJSQyINloJ5sItDX+x2t2W84=
+			</data>
+		</dict>
 		<key>Headers/EncryptedDB.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y87pmPy7OgTgBporpXu4ZlsEScw=
+			LXDJVXv0Lwg8vHQQhDzG+OhB7F8=
 			</data>
 			<key>hash2</key>
 			<data>
-			rtXMUnKg23KeSLn3y04ZsYzhwPw/n4v4XouE2+mV5WI=
+			8ZLRd478OkKQAeQ47PGMIJ7G89R5dWOwf+M7y8jmYmM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -43,17 +54,6 @@
 			<key>hash2</key>
 			<data>
 			uvCuzVqRXpjQxxDMh4XV1W71NPgrGC3LbIk+y627pM4=
-			</data>
-		</dict>
-		<key>PrivateHeaders/DatabaseCenter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TLLC1GTfpVhB7Rh8DsywCYy2r5Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			JyBT2p1ZkptliiyxpPNCmmM6aK855uE/nvzKK6+MaAs=
 			</data>
 		</dict>
 	</dict>

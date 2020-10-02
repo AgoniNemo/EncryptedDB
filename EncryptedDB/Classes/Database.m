@@ -503,7 +503,7 @@ static NSString *const DBKEY = @"89FB940530BD285E86D2DE90081FAB6F";
     [_queue inDatabase:^(FMDatabase *db) {
         [db open];
         __strong typeof(wsf) strongSelf = wsf;
-        [db setKey:strongSelf.db];
+        [db setKey:strongSelf.dbKey];
         block(db);
     }];
 }
